@@ -1,6 +1,6 @@
 # MechaView
 
-The tool wraps your view model inside a single exe WPF app. The result depends on conventions, attributes and injected arguments.
+The tool wraps your plain C# inside a single exe WPF app.
 
 ## Run it
 1. Create a class library (.NET Framework 4.5+)
@@ -10,7 +10,8 @@ The tool wraps your view model inside a single exe WPF app. The result depends o
 5. Get the single exe inside your bin folder (ignore the other files)
 
 ## Basics
-The application consists of the `App` class defined in the global namespace and your view model. The `App` class has to have the exact name and implement the `IApp` interface.
+The application consists of your view model and the `App` class defined in the global namespace. It has to both have the exact name and implement the `IApp` interface.
+
 ```csharp
 using System;
 using Mecha.Wpf.Settings;
@@ -34,7 +35,7 @@ public class BasicsVM
 ![Basics](docs/basics-dark.png)
 
 ## Element Conventions
-Conventions affect how each property is represented and include both property types and names. In simple cases, we may rely solely on them. The following example uses the keywords Label, Password, and Path. The remaining controls are derived from the property types.
+Conventions affect how each property is represented and are defined for both types and names. In simple cases, we may rely solely on them. The following example uses the keywords Label, Password, and Path. The remaining controls are derived from the property types.
 
 ```csharp
 public class ElementConventionsVM
@@ -154,7 +155,7 @@ public class ActionDialogsVM
 
 ## Element Grouping
 
-Each element can be grouped by specifying `Group` and it can be ordered within the group by setting `Position` . `Position` is of type double where the integer part represents a row and the fraction part represents a column. Keep in mind that each value represents order and not a fixed position.
+Each element can be grouped by specifying `Group` and ordered within the group by setting `Position` . `Position` is of type double where the integer part represents a row and the fraction part represents a column. Keep in mind that each value represents order and not a fixed position.
 
 ```csharp
 public class ElementGroupingVM
