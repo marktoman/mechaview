@@ -1,13 +1,13 @@
 # MechaView
 
-The tool wraps your plain C# inside a single exe WPF app.
+The tool wraps plain C# in a single exe WPF app.
 
 ## Run it
 1. Create a class library (.NET Framework 4.5+)
 2. Add [nuget]()
 3. Define your view model (see below)
 4. Run `start-app` from Package Manager Console
-5. Get the single exe inside your bin folder (ignore the other files)
+5. Get the exe inside your bin folder (ignore the other files)
 
 ## Basics
 The application consists of your view model and the `App` class defined in the global namespace. It has to both have the exact name and implement the `IApp` interface.
