@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MechaView.MahApps</id>
+    <version>$version$</version>
+    <title>MechaView.MahApps</title>
+    <authors>marektoman</authors>
+    <owners>marektoman</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Automatic WPF UI for single purpose tools</description>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>desktop app wpf</tags>
+  </metadata>
+</package>

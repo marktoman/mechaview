@@ -1,0 +1,111 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mechaWpf="clr-namespace:Mecha.View.Wpf;assembly=Mecha.Core.Wpf"
+                    xmlns:mechaCtrls="clr-namespace:Mecha.View.Wpf.Controls;assembly=Mecha.Core.Wpf"
+                    xmlns:mahCtrls="http://metro.mahapps.com/winfx/xaml/controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Mecha.Core.Wpf;component/View/Wpf/Styles.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <!--
+    	Bare WPF Controls
+	-->
+
+
+    <!--
+        Mecha Controls
+    -->
+
+    <Style TargetType="mechaCtrls:PasswordInput" BasedOn="{StaticResource MechaPasswordInput}"/>
+    <Style TargetType="mechaCtrls:DateInput" BasedOn="{StaticResource MechaDateInput}"/>
+    <Style TargetType="mechaCtrls:TextInput" BasedOn="{StaticResource MechaTextInput}"/>
+    <Style TargetType="mechaCtrls:EnumInput" BasedOn="{StaticResource MechaEnumInput}"/>
+    <Style TargetType="mechaCtrls:TextView" BasedOn="{StaticResource MechaTextView}"/>
+    <Style TargetType="mechaCtrls:PathInput" BasedOn="{StaticResource MechaPathInput}"/>
+    <Style TargetType="mechaCtrls:MainPanel" BasedOn="{StaticResource MechaMainPanel}"/>
+    <Style TargetType="mechaCtrls:ActionPanel" BasedOn="{StaticResource MechaActionPanel}"/>
+    <Style TargetType="mechaCtrls:GroupPanel" BasedOn="{StaticResource MechaGroupPanel}"/>
+
+
+    <!--
+        Metro Controls
+    -->
+
+    <Style TargetType="ListView">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroListView}"
+                                           Merged="{StaticResource MechaListView}"/>
+        </Style.BasedOn>
+    </Style>
+
+    <Style TargetType="GroupBox" BasedOn="{StaticResource MetroGroupBox}">
+        <Setter Property="BorderBrush" Value="#CCCCCC"/>
+        <Setter Property="Background" Value="#CCCCCC"/>
+    </Style>
+
+    <Style TargetType="ComboBox">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroComboBox}"
+                                           Merged="{StaticResource MechaComboBox}"/>
+        </Style.BasedOn>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+    </Style>
+
+    <Style TargetType="PasswordBox">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroPasswordBox}"
+                                           Merged="{StaticResource MechaTextBox}"/>
+        </Style.BasedOn>
+        <Setter Property="mahCtrls:TextBoxHelper.Watermark" Value="{Binding Description}"/>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroTextBox}"
+                                           Merged="{StaticResource MechaTextBox}"/>
+        </Style.BasedOn>
+        <Setter Property="mahCtrls:TextBoxHelper.Watermark" Value="{Binding Description}"/>
+        <!--<Setter Property="mahCtrls:TextBoxHelper.UseFloatingWatermark" Value="False"/>-->
+    </Style>
+
+    <Style TargetType="DatePicker">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroDatePicker}"
+                                           Merged="{StaticResource MechaDatePicker}"/>
+        </Style.BasedOn>
+    </Style>
+
+    <Style TargetType="CheckBox">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroCheckBox}"
+                                           Merged="{StaticResource MechaCheckBox}"/>
+        </Style.BasedOn>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+    </Style>
+
+    <Style TargetType="Button">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroButton}"
+                                           Merged="{StaticResource MechaButton}"/>
+        </Style.BasedOn>
+        <Style.Setters>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="mahCtrls:ButtonHelper.PreserveTextCase" Value="True"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Label">
+        <Style.BasedOn>
+            <mechaWpf:MergedStyles BasedOn="{StaticResource MetroLabel}"
+                                           Merged="{StaticResource MechaLabel}"/>
+        </Style.BasedOn>
+    </Style>
+
+</ResourceDictionary>

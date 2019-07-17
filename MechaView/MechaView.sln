@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mecha.Wpf.Settings", "Mecha.Wpf.Settings\Mecha.Wpf.Settings.csproj", "{FBCDEB01-6F10-4C49-8618-8A5074DCE240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mecha.Core.Wpf", "Mecha.Core.Wpf\Mecha.Core.Wpf.csproj", "{CAC4B9FB-05A2-42A1-A18C-2E7DE85B404F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mecha.Core", "Mecha.Core\Mecha.Core.csproj", "{8CA49B9D-9BC4-42CB-B9A4-059D8C936917}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SettingManagerShared", "SettingManager\SettingManager\SettingManagerShared.shproj", "{423AB3E4-56E8-4228-93C4-FA169CE18AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mecha.Wpf.Ma", "Mecha.Wpf.Ma\Mecha.Wpf.Ma.csproj", "{481A99C8-678F-4367-A50B-E732F6AD05FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mecha.Wpf.Ma.Dev", "Mecha.Wpf.Ma.Dev\Mecha.Wpf.Ma.Dev.csproj", "{8C2F5DC8-551D-4F14-A5D5-AC6EB4AD8686}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SettingManager\SettingManager\SettingManager.projitems*{423ab3e4-56e8-4228-93c4-fa169ce18ad9}*SharedItemsImports = 13
+		SettingManager\SettingManager\SettingManager.projitems*{8ca49b9d-9bc4-42cb-b9a4-059d8c936917}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBCDEB01-6F10-4C49-8618-8A5074DCE240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCDEB01-6F10-4C49-8618-8A5074DCE240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCDEB01-6F10-4C49-8618-8A5074DCE240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCDEB01-6F10-4C49-8618-8A5074DCE240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC4B9FB-05A2-42A1-A18C-2E7DE85B404F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC4B9FB-05A2-42A1-A18C-2E7DE85B404F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC4B9FB-05A2-42A1-A18C-2E7DE85B404F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC4B9FB-05A2-42A1-A18C-2E7DE85B404F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA49B9D-9BC4-42CB-B9A4-059D8C936917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA49B9D-9BC4-42CB-B9A4-059D8C936917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA49B9D-9BC4-42CB-B9A4-059D8C936917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA49B9D-9BC4-42CB-B9A4-059D8C936917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481A99C8-678F-4367-A50B-E732F6AD05FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481A99C8-678F-4367-A50B-E732F6AD05FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481A99C8-678F-4367-A50B-E732F6AD05FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481A99C8-678F-4367-A50B-E732F6AD05FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2F5DC8-551D-4F14-A5D5-AC6EB4AD8686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2F5DC8-551D-4F14-A5D5-AC6EB4AD8686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2F5DC8-551D-4F14-A5D5-AC6EB4AD8686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2F5DC8-551D-4F14-A5D5-AC6EB4AD8686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {509D9A93-C7DF-4D2B-A438-1ECFBB904025}
+	EndGlobalSection
+EndGlobal
