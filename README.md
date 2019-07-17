@@ -1,6 +1,6 @@
 # MechaView
 
-The tool wraps plain C# in a single exe WPF app.
+Write plain C#, get a single exe WPF app. The project is intended for simple tools.
 
 ## Run it
 1. Create a class library (.NET Framework 4.5+)
