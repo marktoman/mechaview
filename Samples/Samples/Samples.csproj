@@ -47,10 +47,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mecha.Core, Version=1.0.7137.16169, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MechaView.MahApps.0.0.150\lib\net45\Mecha.Core.dll</HintPath>
+      <HintPath>..\packages\MechaView.MahApps.0.0.151\lib\net45\Mecha.Core.dll</HintPath>
     </Reference>
     <Reference Include="Mecha.Wpf.Settings, Version=1.0.7136.42012, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MechaView.MahApps.0.0.150\lib\net45\Mecha.Wpf.Settings.dll</HintPath>
+      <HintPath>..\packages\MechaView.MahApps.0.0.151\lib\net45\Mecha.Wpf.Settings.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

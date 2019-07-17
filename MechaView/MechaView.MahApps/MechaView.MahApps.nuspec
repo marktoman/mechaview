@@ -4,13 +4,16 @@
     <id>MechaView.MahApps</id>
     <version>$version$</version>
     <title>MechaView.MahApps</title>
-    <authors>marektoman</authors>
-    <owners>marektoman</owners>
+    <authors>Marek Toman</authors>
+    <owners>Marek Toman</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Automatic WPF UI for single purpose tools</description>
     <releaseNotes>
     </releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>desktop app wpf</tags>
+    <tags>wpf ui generator mahapps </tags>
+    <language>en-US</language>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/marektoman/mechaview</projectUrl>
   </metadata>
 </package>
