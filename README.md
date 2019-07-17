@@ -214,3 +214,8 @@ public class ElementGroupingVM
 
 ## Full Examples
 Get the above examples in the `Samples` folder.
+
+
+## License
+
+[MIT](LICENSE)
