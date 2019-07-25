@@ -4,7 +4,7 @@ Write plain C#, get a single exe WPF app. The project is intended for simple too
 
 ## Run it
 1. Create a class library (.NET Framework 4.5+)
-2. Add the [nuget](https://www.nuget.org/packages/MechaView.MahApps/0.0.151)
+2. Add the [nuget](https://www.nuget.org/packages/MechaView.MahApps/0.0.152)
 3. Define your view model (see below)
 4. Run `start-app` from Package Manager Console
 5. Get the exe inside your bin folder (ignore the other files)

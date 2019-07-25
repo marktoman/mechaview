@@ -17,24 +17,24 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
-    <IsWebBootstrapper>True</IsWebBootstrapper>
-    <PublishUrl>$(AppPublishUrl)</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <!-- <IsWebBootstrapper>True</IsWebBootstrapper> -->
+    <!-- <PublishUrl>$(AppPublishUrl)</PublishUrl> -->
+    <!-- <Install>true</Install> -->
+    <!-- <InstallFrom>Web</InstallFrom> -->
+    <!-- <UpdateEnabled>false</UpdateEnabled> -->
+    <!-- <UpdateMode>Foreground</UpdateMode> -->
+    <!-- <UpdateInterval>7</UpdateInterval> -->
+    <!-- <UpdateIntervalUnits>Days</UpdateIntervalUnits> -->
+    <!-- <UpdatePeriodically>false</UpdatePeriodically> -->
+    <!-- <UpdateRequired>false</UpdateRequired> -->
+    <!-- <MapFileExtensions>true</MapFileExtensions> -->
+    <!-- <OpenBrowserOnPublish>false</OpenBrowserOnPublish> -->
+    <!-- <ApplicationRevision>1</ApplicationRevision> -->
+    <!-- <ApplicationVersion>1.0.0.%2a</ApplicationVersion> -->
+    <!-- <UseApplicationTrust>false</UseApplicationTrust> -->
+    <!-- <CreateDesktopShortcut>true</CreateDesktopShortcut> -->
     <!--<PublishWizardCompleted>true</PublishWizardCompleted>-->
-    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <!-- <BootstrapperEnabled>true</BootstrapperEnabled> -->
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>

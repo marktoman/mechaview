@@ -74,9 +74,12 @@ function New-App {
             {$proj.ConfigurationManager|Where-Object ConfigurationName -eq Release}
         else
             {$proj.ConfigurationManager.ActiveConfiguration}
-    $projRoot = [io.path]::GetDirectoryName($proj.FullName)
-    $projOut  = [io.path]::GetFullPath((Join-Path $projRoot $conf.Object.OutputPath))
+
+    $projAbsDir = [io.path]::GetDirectoryName($proj.FullName)
+    $projRoot = Resolve-Path -Relative $projAbsDir
+    $projOut  = Join-Path $projRoot $conf.Object.OutputPath
     $confName = $conf.ConfigurationName
+    $projRelPath = Resolve-Path -Relative $proj.FullName
 
     Set-Location $PSScriptRoot\Mecha.Wpf.Ma.App
     Copy-Item (Join-Path $projRoot app.ico) . -Force
@@ -97,11 +100,11 @@ function New-App {
         /p:DotNetVersion="v$DotNetVersion" `
         /p:AppName="$Name" `
         /p:ProjName="$projName" `
-        /p:ProjPath="$($proj.FullName)" `
-        /p:ProjRoot="$($projRoot)" `
+        /p:ProjPath="$projRelPath" `
         /p:ProjGuid="{$($proj.Properties.Item('AssemblyGuid').Value)}" `
-        /p:ProjOutput="$projOut" `
-        /p:AppPublishUrl="$InstallUrl/$projName"
+        /p:ProjOutput="$projOut"
+        #/p:ProjRoot="$($projRoot)" `
+        # /p:AppPublishUrl="$InstallUrl/$projName"
     if ($err) {throw $err}
 
     $projOut
